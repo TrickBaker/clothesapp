@@ -1,0 +1,124 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:spinnerDropDownItemStyle">@style/mySpinnerDropDownItemStyle</item>
+        <item name="android:spinnerItemStyle">@style/mySpinnerItemStyle</item>
+
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="SSDialog.Dialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:textColor">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColorPrimary">#DD000000</item>
+        <item name="android:textColorSecondary">#8A000000</item>
+        <item name="android:textColorHint">#42000000</item>
+    </style>
+
+
+    <style name="SSBYellowButtonTrokeSmall" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/bg_btn_yellow_troke</item>
+        <item name="background">@drawable/bg_btn_yellow_troke</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/btn_width_small</item>
+        <item name="android:layout_height">@dimen/btn_height_small</item>
+        <item name="android:textSize">@dimen/btn_text_size_small</item>
+    </style>
+
+
+    <style name="Widget.FloatLabel" parent="android:TextAppearance.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="floatlabelededittext">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="mySpinnerDropDownItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/text_blue</item>
+    </style>
+
+    <style name="myTextAppearanceSpinnerItem" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/text_blue</item>
+    </style>
+
+    <style name="mySpinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/myTextAppearanceSpinnerItem</item>
+        <item name="android:text"></item>
+    </style>
+
+
+    <style parent="android:style/Widget.Button" name="SSBYellowButtonTroke">
+        <item name="android:background">@drawable/bg_btn_yellow_troke</item>
+        <item name="android:textColor">@color/yellow</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/btn_width</item>
+        <item name="android:layout_height">@dimen/btn_height</item>
+        <item name="android:textSize">@dimen/btn_text_size</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+
+    <style name="AppReaderTheme" parent="@android:style/Theme.NoTitleBar">
+        <!--  <item name="android:windowBackground">@drawable/tiled_background</item> -->
+        <item name="android:windowBackground">@android:color/darker_gray</item>
+    </style>
+
+    <declare-styleable name="ShadowLayout">
+        <attr name="sl_cornerRadius" format="dimension" />
+        <attr name="sl_shadowRadius" format="dimension" />
+        <attr name="sl_shadowColor" format="color" />
+        <attr name="sl_dx" format="dimension" />
+        <attr name="sl_dy" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SpinnerLoading">
+        <attr name="circle_color" format="color" />
+        <attr name="circle_color_move" format="color" />
+    </declare-styleable>
+
+
+    <style name="FullScreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="STSwitch" >
+        <item name="colorControlActivated">#31d495</item>
+    </style>
+
+</resources>

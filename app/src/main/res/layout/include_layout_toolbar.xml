@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:maxLines="1">
+
+                <com.anthony.frameimageeffect.widget.SSTextView
+                    android:id="@+id/title_bar"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="All project"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_title_bar"
+                    android:visibility="visible"
+                    app:font="@string/font_worksans_regular" />
+
+                <FrameLayout
+                    android:id="@+id/menu_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foreground="@drawable/foreground_footer_pressed">
+
+                    <com.anthony.frameimageeffect.widget.SSTextView
+                        android:id="@+id/menu_center_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Weekly"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_title_bar"
+                        android:visibility="gone"
+                        app:font="@string/font_worksans_regular" />
+                </FrameLayout>
+
+            </FrameLayout>
+
+            <com.anthony.frameimageeffect.widget.SSTextView
+                android:id="@+id/sub_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/next_right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/right_menu"
+            android:foreground="@drawable/foreground_footer_pressed">
+
+            <ImageView
+                android:id="@+id/next_right_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/right_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:foreground="@drawable/foreground_footer_pressed"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/right_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+            <com.anthony.frameimageeffect.widget.SSButton
+                android:id="@+id/right_menu_button"
+                style="@style/SSBYellowButtonTrokeSmall"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:text="Add"
+                android:visibility="gone"
+                app:fontBt="@string/font_worksans_medium" />
+
+            <com.anthony.frameimageeffect.widget.SSTextView
+                android:id="@+id/right_menu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Monthly"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_bar"
+                android:visibility="gone"
+                app:font="@string/font_worksans_regular" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/left_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:foreground="@drawable/foreground_footer_pressed"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/left_menu_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:src="@drawable/ic_back"
+                android:visibility="visible" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

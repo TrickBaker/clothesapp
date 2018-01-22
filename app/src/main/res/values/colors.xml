@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#091c2b</color>
+    <color name="yellow">#ffdb3b</color>
+    <color name="text_blue">#4c9ecb</color>
+
+    <color name="foreground_color">#88042035</color>
+    <color name="blue_footer">#002b4e</color>
+    <color name="notification_color">#e35b49</color>
+
+    <color name="bg_color">#212121</color>
+    <color name="bg_bottom">#000000</color>
+
+    <!--Dialog-->
+    <color name="background_dialog">#CC171717</color>
+    <color name="foreground_dark_color">#8803233d</color>
+    <color name="title_dialog">#5bb6e7</color>
+</resources>

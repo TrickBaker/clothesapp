@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/dialogContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/layout_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_badges_detail"
+            android:orientation="vertical">
+
+            <com.anthony.frameimageeffect.widget.SSTextView
+                android:id="@+id/dialog_badges_detail_tv_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Close"
+                android:textColor="@drawable/text_close_clickable"
+                android:textSize="15sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dialog_badges_detail_iv_avatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/ic_badges" />
+
+            <com.anthony.frameimageeffect.widget.SSTextView
+                android:id="@+id/dialog_badges_detail_tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="123"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_title_bar"
+                app:font="@string/font_worksans_light" />
+
+            <com.anthony.frameimageeffect.widget.SSTextView
+                android:id="@+id/dialog_badges_detail_tv_obtained"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="123"
+                android:textColor="@color/text_blue"
+                android:textSize="16sp"
+                app:font="@string/font_worksans_light" />
+
+            <com.anthony.frameimageeffect.widget.SSTextView
+                android:id="@+id/dialog_badges_detail_tv_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="123"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:font="@string/font_worksans_light" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

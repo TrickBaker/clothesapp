@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="footer_height">60dp</dimen>
+    <dimen name="sub_footer_height">54dp</dimen>
+    <dimen name="footer_icon">24dp</dimen>
+    <dimen name="padding_height">10dp</dimen>
+    <dimen name="edittext_size">16dp</dimen>
+
+    <!-- toolbar search -->
+    <dimen name="text_size_title_bar">19sp</dimen>
+    <dimen name="text_size_title">10sp</dimen>
+    <dimen name="margin_right_btn_toolbar">24dp</dimen>
+    <dimen name="size_padding_btn_search">8dp</dimen>
+    <dimen name="size_margin_right_search">12dp</dimen>
+    <dimen name="margin_left_search">7dp</dimen>
+
+    <dimen name="btn_width">160dp</dimen>
+    <dimen name="btn_width_big">200dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width_small">56dp</dimen>
+    <dimen name="btn_height_small">28dp</dimen>
+    <dimen name="btn_text_size">17sp</dimen>
+    <dimen name="btn_text_size_small">11sp</dimen>
+    <dimen name="text_button_small">15sp</dimen>
+
+    <!-- radius -->
+    <dimen name="normal_radius">4dp</dimen>
+    <dimen name="meidum_radius">25dp</dimen>
+
+
+</resources>

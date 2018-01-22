@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/footer_height"
+    android:layout_alignParentBottom="true">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_layout_footer" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <FrameLayout
+            android:id="@+id/footer_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/sub_footer_notification"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sub_footer_height"
+                android:layout_gravity="bottom"
+                android:background="@color/blue_footer"
+                android:foreground="@drawable/foreground_footer_pressed">
+
+                <ImageView
+                    android:id="@+id/ic_notification_notification"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignRight="@+id/ic_notification"
+                    android:layout_alignTop="@+id/ic_notification"
+                    android:src="@drawable/red_dot"
+                    android:translationX="3dp"
+                    android:translationY="-3dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ic_notification"
+                    android:layout_width="@dimen/footer_icon"
+                    android:layout_height="@dimen/footer_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_menu_notification" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/footer_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/sub_footer_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sub_footer_height"
+                android:layout_gravity="bottom"
+                android:background="@color/blue_footer"
+                android:foreground="@drawable/foreground_footer_pressed">
+
+                <ImageView
+                    android:id="@+id/ic_profile_notification"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignRight="@+id/ic_profile"
+                    android:layout_alignTop="@+id/ic_profile"
+                    android:src="@drawable/red_dot"
+                    android:translationX="3dp"
+                    android:translationY="-3dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ic_profile"
+                    android:layout_width="@dimen/footer_icon"
+                    android:layout_height="@dimen/footer_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/effect_image" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/footer_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/sub_footer_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sub_footer_height"
+                android:layout_gravity="bottom"
+                android:background="@color/blue_footer"
+                android:foreground="@drawable/foreground_footer_pressed">
+
+                <ImageView
+                    android:id="@+id/ic_msg_notification"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignRight="@+id/ic_message"
+                    android:layout_alignTop="@+id/ic_message"
+                    android:src="@drawable/red_dot"
+                    android:translationX="3dp"
+                    android:translationY="-3dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ic_message"
+                    android:layout_width="@dimen/footer_icon"
+                    android:layout_height="@dimen/footer_icon"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_menu_messages" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/footer_friends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/sub_footer_friends"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sub_footer_height"
+                android:layout_gravity="bottom"
+                android:background="@color/blue_footer"
+                android:foreground="@drawable/foreground_footer_pressed">
+
+                <ImageView
+                    android:id="@+id/ic_friend_notification"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignRight="@+id/ic_friend"
+                    android:layout_alignTop="@+id/ic_friend"
+                    android:src="@drawable/red_dot"
+                    android:translationX="3dp"
+                    android:translationY="-3dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ic_friend"
+                    android:layout_width="@dimen/footer_icon"
+                    android:layout_height="@dimen/footer_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_menu_friends" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/footer_settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:id="@+id/sub_footer_settings"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sub_footer_height"
+                android:layout_gravity="bottom"
+                android:background="@color/blue_footer"
+                android:foreground="@drawable/foreground_footer_pressed">
+
+                <ImageView
+                    android:id="@+id/ic_setting_notification"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignRight="@+id/ic_setting"
+                    android:layout_alignTop="@+id/ic_setting"
+                    android:src="@drawable/red_dot"
+                    android:translationX="3dp"
+                    android:translationY="-3dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ic_setting"
+                    android:layout_width="@dimen/footer_icon"
+                    android:layout_height="@dimen/footer_icon"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_menu_settings" />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

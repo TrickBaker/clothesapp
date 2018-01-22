@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">FrameImageEffect</string>
+
+    <!--font-->
+    <string name="font_worksans_light">fonts/WorkSans-Light.ttf</string>
+    <string name="font_worksans_regular">fonts/WorkSans-Regular.ttf</string>
+    <string name="font_worksans_extralight">fonts/WorkSans-ExtraLight.ttf</string>
+    <string name="font_worksans_medium">fonts/WorkSans-Medium.ttf</string>
+    <string name="font_worksans_thin">fonts/WorkSans-Thin.ttf</string>
+
+
+    <!--Dialog-->
+    <string name="yesClick">Yes</string>
+    <string name="noClick">No</string>
+    <string name="okCLick">OK</string>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+</resources>
